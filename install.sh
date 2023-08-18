@@ -23,7 +23,6 @@ sudo apt install -y neofetch htop lm-sensors smartmontools
 # Various utilities
 sudo apt install -y imagemagick  gnome-icon-theme rar unrar p7zip-full p7zip-rar zip unzip lxappearance
 
-
 # Browser and Mail client Installation (eg. chromium)
 sudo apt install -y firefox-esr dillo 
 
@@ -35,12 +34,6 @@ sudo apt install -y fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-libe
 
 #Music and video packages
 sudo apt install -y mpv alsa-utils moc
-
-#Torrents
-sudo apt install -y qbittorrent transmission-gtk
-
-#Install Office packages
-sudo apt install -y libreoffice-writer libreoffice-gtk3  
 
 #Plan9
 sudo apt install -y build-essential libx11-dev libxext-dev libxt-dev xorg-dev
