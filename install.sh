@@ -196,11 +196,6 @@ sudo apt install -y figlet qimgv l3afpad galculator redshift cpu-x galculator gh
 
 \cp ~/bookworm-scripts/resources/.bashrc ~
 
-=======
-#Plan9
-sudo apt install -y build-essential libx11-dev libxext-dev libxt-dev xorg-dev
->>>>>>> affb9dd9ad35ed75c27a9bd7f816f516e681e8b1
-
 sudo apt autoremove
 
 printf "\e[1;32mYou can now reboot! Thanks you.\e[0m\n"
