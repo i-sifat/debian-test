@@ -157,8 +157,6 @@ do
 	cd ~/.config/suckless/$tool;make;sudo make clean install;cd ..
 done
 
-
-<<<<<<< HEAD
 sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
