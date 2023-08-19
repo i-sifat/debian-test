@@ -83,8 +83,7 @@ sudo apt install -y qbittorrent
 #sudo apt install -y libreoffice-writer libreoffice-gtk3  
 
 # Browser and Mail client Installation (eg. chromium)
-sudo apt install -y firefox-esr dillo 
->>>>>>> affb9dd9ad35ed75c27a9bd7f816f516e681e8b1
+sudo apt install -y firefox-esr dillo
 
 # Aditional packages
 sudo apt install -y zathura zathura-djvu  
