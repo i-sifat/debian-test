@@ -73,12 +73,6 @@ sudo apt install -y neofetch htop lm-sensors smartmontools
 # alias ls='exa -al --long --header --color=always --group-directories-first' 
 sudo apt install -y exa
 
-# Printing and bluetooth (if needed)
-
-sudo apt install -y bluez blueman
-sudo systemctl enable bluetooth
-
-<<<<<<< HEAD
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
 
