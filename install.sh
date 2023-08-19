@@ -78,6 +78,7 @@ sudo apt install -y exa
 sudo apt install -y bluez blueman
 sudo systemctl enable bluetooth
 
+<<<<<<< HEAD
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
 
@@ -92,6 +93,10 @@ sudo apt install -y qbittorrent
 
 #Install Office packages
 #sudo apt install -y libreoffice-writer libreoffice-gtk3  
+=======
+# Browser and Mail client Installation (eg. chromium)
+sudo apt install -y firefox-esr dillo 
+>>>>>>> affb9dd9ad35ed75c27a9bd7f816f516e681e8b1
 
 # Aditional packages
 sudo apt install -y zathura zathura-djvu  
@@ -166,6 +171,7 @@ do
 done
 
 
+<<<<<<< HEAD
 sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
@@ -203,6 +209,10 @@ sudo apt install -y figlet qimgv l3afpad galculator redshift cpu-x galculator gh
 
 \cp ~/bookworm-scripts/resources/.bashrc ~
 
+=======
+#Plan9
+sudo apt install -y build-essential libx11-dev libxext-dev libxt-dev xorg-dev
+>>>>>>> affb9dd9ad35ed75c27a9bd7f816f516e681e8b1
 
 sudo apt autoremove
 
