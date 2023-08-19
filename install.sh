@@ -76,18 +76,12 @@ sudo apt install -y exa
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
 
-# Install brave-browser
-curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
-apt update
-apt install brave-browser -y
-
 #Torrents
 sudo apt install -y qbittorrent
 
 #Install Office packages
 #sudo apt install -y libreoffice-writer libreoffice-gtk3  
-=======
+
 # Browser and Mail client Installation (eg. chromium)
 sudo apt install -y firefox-esr dillo 
 >>>>>>> affb9dd9ad35ed75c27a9bd7f816f516e681e8b1
