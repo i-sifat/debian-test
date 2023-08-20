@@ -29,10 +29,6 @@
 #done
 #fc-cache
 
-
-# Install fonts
-#sudo apt install -y fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation xfonts-terminus fonts-jetbrains-mono
-
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
