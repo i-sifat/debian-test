@@ -62,7 +62,7 @@ sudo apt install -y numlockx policykit-1-gnome mousepad
 sudo apt install -y picom rofi dunst libnotify-bin unzip 
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
-sudo apt install -y micro
+sudo apt install -y micro gnome-screenshot
 
 # my favs
 sudo apt install -y scrot evince pdfarranger mkvtoolnix-gui
