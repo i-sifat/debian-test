@@ -1,35 +1,7 @@
 #!/bin/bash
 
-# Default packages are for the configuration and corresponding .config folders
-# xorg display server installation and wm
-#sudo apt install -y xorg xterm rxvt-unicode
-
-
 # Various utilities
-#sudo apt install -y imagemagick  gnome-icon-theme rar unrar p7zip-full p7zip-rar zip unzip lxappearance
-#mkdir ~/.local/share/fonts
-#cd /tmp
-#fonts=( 
-#"FiraCode" 
-#"Go-Mono" 
-#"Hack" 
-#"Inconsolata" 
-#"Iosevka" 
-#"JetBrainsMono" 
-##"Mononoki" 
-#"RobotoMono" 
-#"SourceCodePro" 
-#)
-#
-#for font in ${fonts[@]}
-#do
-#    wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip
-#    unzip $font.zip -d $HOME/.local/share/fonts/$font/
-#    rm $font.zip
-#done
-#fc-cache
-
-# Install packages after installing base Debian with no GUI
+sudo apt install -y gnome-icon-theme
 
 # xorg display server installation
 sudo apt install -y xorg xbacklight xbindkeys xinput xorg-dev
@@ -92,8 +64,47 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 sudo apt install -y micro
 
+# my favs
+sudo apt install -y scrot evince pdfarranger mkvtoolnix-gui
+
+sudo apt install -y figlet qimgv redshift galculator udns-utils curl
+
+sudo apt install snapd
+sudo systemctl start snapd
+Sudo systemctl enable snapd
+sudo snap install core
+sudo snap install eog	
+sudo snap install flutter --classic
+sudo snap install code --classic
+sudo snap install android-studio --classic
+sudo snap install brave
+sudo snap install telegram-desktop
+sudo snap install wps-2019-snap
+
 # Install fonts
 sudo apt install fonts-font-awesome fonts-ubuntu fonts-terminus 
+
+mkdir ~/.local/share/fonts
+cd /tmp
+fonts=( 
+"FiraCode" 
+"Go-Mono" 
+"Hack" 
+"Inconsolata" 
+"Iosevka" 
+"JetBrainsMono" 
+"Mononoki" 
+"RobotoMono" 
+"SourceCodePro" 
+)
+
+for font in ${fonts[@]}
+do
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/$font.zip
+unzip $font.zip -d $HOME/.local/share/fonts/$font/
+rm $font.zip
+done
+fc-cache
 
 # Ly Console Manager
 # Needed packages
@@ -114,7 +125,7 @@ fi
 cat > ./temp << "EOF"
 [Desktop Entry]
 Encoding=UTF-8
-Name=dwm
+Name=sifat
 Comment=Dynamic window manager
 Exec=dwm
 Icon=dwm
@@ -156,10 +167,7 @@ ANOTHER SCRIPT
 
 
 
-# my favs
-sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-plugin-overview geany-plugin-spellcheck geany-plugin-treebrowser geany-plugin-vimode scrot evince pdfarranger -gtk mkvtoolnix-gui
 
-sudo apt install -y figlet qimgv l3afpad galculator redshift cpu-x galculator ghostwriter udns-utils whois curl
 
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
