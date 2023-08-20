@@ -36,7 +36,7 @@
 # Install packages after installing base Debian with no GUI
 
 # xorg display server installation
-sudo apt install -y xorg xbacklight xbindkeys xvkbd xinput xorg-dev
+sudo apt install -y xorg xbacklight xbindkeys xinput xorg-dev
 
 # INCLUDES make,etc.
 sudo apt install -y build-essential 
@@ -76,14 +76,8 @@ sudo apt install -y exa
 # Browser Installation (eg. chromium)
 sudo apt install -y firefox-esr 
 
-#Torrents
-sudo apt install -y qbittorrent
-
 #Install Office packages
 #sudo apt install -y libreoffice-writer libreoffice-gtk3  
-
-# Browser and Mail client Installation (eg. chromium)
-sudo apt install -y firefox-esr dillo
 
 # Aditional packages
 sudo apt install -y zathura zathura-djvu  
@@ -101,26 +95,19 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 
 # Command line text editor -- nano preinstalled  -- I like micro but vim is great
 sudo apt install -y micro
-sudo apt install -y neovim
 
 # Install fonts
-sudo apt install fonts-font-awesome fonts-ubuntu fonts-liberation2 fonts-liberation fonts-terminus 
-
-# Install Lightdm Console Display Manager
-# sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
-# sudo systemctl enable lightdm
-# echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
-# echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
+sudo apt install fonts-font-awesome fonts-ubuntu fonts-terminus 
 
 # Ly Console Manager
 # Needed packages
-sudo apt install -y libpam0g-dev libxcb-xkb-dev
-cd 
-git clone --recurse-submodules https://github.com/fairyglade/ly
-cd ly
-make
-sudo make install installsystemd
-sudo systemctl enable ly.service
+#sudo apt install -y libpam0g-dev libxcb-xkb-dev
+#cd 
+#git clone --recurse-submodules https://github.com/fairyglade/ly
+#cd ly
+#make
+#sudo make install installsystemd
+#sudo systemctl enable ly.service
 
 
 # XSessions and dwm.desktop
@@ -178,11 +165,11 @@ sudo apt install -y geany geany-plugin-addons geany-plugin-git-changebar geany-p
 
 sudo apt install -y figlet qimgv l3afpad galculator redshift cpu-x galculator ghostwriter udns-utils whois curl
 
-#Install Lightdm Console Display Manager
-#sudo apt install -y lightdm lightdm-gtk-greeter-settings
-#sudo systemctl enable lightdm
-
-
+# Install Lightdm Console Display Manager
+sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
+sudo systemctl enable lightdm
+echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
+echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
 ########################################################
 # End of script for default config
 #
@@ -192,7 +179,7 @@ sudo apt install -y figlet qimgv l3afpad galculator redshift cpu-x galculator gh
 
 
 
-\cp ~/bookworm-scripts/resources/.bashrc ~
+#\cp ~/bookworm-scripts/resources/.bashrc ~
 
 sudo apt autoremove
 
