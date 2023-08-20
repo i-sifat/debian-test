@@ -146,7 +146,7 @@ xdg-user-dirs-update
 # Creating directories
 mkdir ~/.config/suckless
 
-sudo apt install -y libx11-dev
+sudo apt install -y libx11-dev libimlib2-dev
 
 # Move install directory, make, and install
 cd ~/.config/suckless
