@@ -155,7 +155,7 @@ sudo apt autoremove
 
 printf "\e[1;32mDone! you can now reboot.\e[0m\n"
 
-ANOTHER SCRIPT
+#ANOTHER SCRIPT
 
 # PICK YOUR Window Managers (Uncomment if you want these installed)
 # bash ~/bookworm-scripts/resources/bspwm-commands
