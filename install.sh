@@ -164,16 +164,19 @@ printf "\e[1;32mDone! you can now reboot.\e[0m\n"
 # bash ~/bookworm-scripts/resources/qtile-commands
 # bash ~/bookworm-scripts/resources/i3-commands
 
-
-
-
-
-
 # Install Lightdm Console Display Manager
 sudo apt install -y lightdm lightdm-gtk-greeter-settings slick-greeter
 sudo systemctl enable lightdm
 echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
 echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
+
+# Get the default system username
+default_user=$(whoami)
+
+# Change permissions and ownership
+sudo chmod -R 755 /media/$default_user
+sudo chown -R $default_user:$default_user /media/$default_user
+
 ########################################################
 # End of script for default config
 #
