@@ -65,7 +65,7 @@ sudo apt install -y picom rofi dunst libnotify-bin unzip
 sudo apt install -y micro gnome-screenshot
 
 # my favs
-sudo apt install -y scrot evince pdfarranger mkvtoolnix-gui
+sudo apt install -y scrot evince pdfarranger mkvtoolnix-gui fish
 
 sudo apt install -y figlet qimgv redshift galculator udns-utils curl
 
