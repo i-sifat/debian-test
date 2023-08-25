@@ -1,10 +1,17 @@
 #!/bin/bash
 
-# Check if the script is being run as root
-if [ "$EUID" -ne 0 ]; then
-    echo "Please run this script as root"
-    exit 1
+# Check if Script is Run as Root
+if [[ $EUID -ne 0 ]]; then
+  echo "You must be a root user to run this script, please run sudo ./install.sh" 2>&1
+  exit 1
 fi
+
+username=$(id -u -n 1000)
+builddir=$(pwd)
+
+# Update packages list and update system
+apt update
+apt upgrade -y
 
 # Various utilities
 sudo apt install -y gnome-icon-theme
