@@ -106,6 +106,15 @@ rm $font.zip
 done
 fc-cache
 
+
+# Get the default system username
+new_user=$(whoami)
+
+# Add user to sudoers
+echo "$new_user ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+echo "User $new_user added to sudoers"
+
 # Ly Console Manager
 # Needed packages
 #sudo apt install -y libpam0g-dev libxcb-xkb-dev
@@ -171,11 +180,11 @@ echo 'greeter-session=slick-greeter' >>  sudo tee -a /etc/lightdm/lightdm.conf
 echo 'greeter-hide-user=false' >>  sudo tee -a /etc/lightdm/lightdm.conf
 
 # Get the default system username
-default_user=$(whoami)
+new_user=$(whoami)
 
 # Change permissions and ownership
-sudo chmod -R 755 /media/$default_user
-sudo chown -R $default_user:$default_user /media/$default_user
+sudo chmod -R 755 /media/$new_user
+sudo chown -R $new_user:$new_user /media/$new_user
 
 ########################################################
 # End of script for default config
